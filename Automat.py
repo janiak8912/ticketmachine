@@ -25,7 +25,7 @@ def display_menu(menu):
 
 def register_payment(cart):
     total = sum(price for _, price in cart)
-    print(f"Kwota do zapłaty: {total:.2f} zł")
+    print(f"Kwota do zapłaty: {total:.2f} zł")  # konsultacja GPT
     while True:
         payment_method = input("Wybierz metodę płatności: \nb - BLIK \nk- karta\ng - gotówka\n")
         if payment_method.lower()=='b':
